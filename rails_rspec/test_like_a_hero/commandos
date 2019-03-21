@@ -1,3 +1,9 @@
 rails generate rspec:install
 
 bundle exec rspec
+
+rails g model user
+
+rails g migration add_name_kind_level_to_user nickname:string kind:integer level:integer
+
+rails db:migrate
