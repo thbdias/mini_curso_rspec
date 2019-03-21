@@ -1,0 +1,17 @@
+echo "# mini_curso_rspec" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:thbdias/mini_curso_rspec.git
+git push -u origin master
+
+gem install rspec
+	
+rspec --init
+	
+mkdir lib && mkdir spec/lib
+
+touch lib/hero.rb && touch spec/lib/hero_spec.rb
+
+rspec spec/lib/hero_spec.rb
+
