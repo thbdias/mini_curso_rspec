@@ -1,0 +1,10 @@
+gem install rspec
+	
+rspec --init
+	
+mkdir lib && mkdir spec/lib
+
+touch lib/hero.rb && touch spec/lib/hero_spec.rb
+
+rspec spec/lib/hero_spec.rb
+
